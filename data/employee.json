@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Jane Adams",
+        "position" : "Frontend Developer",
+        "team" : "Team 1",
+        "gender": "Female"
+    },
+     {
+        "name" : "Stella Benedict",
+        "position" : "UI Designer",
+        "team" : "Team 1",
+        "gender": "Female"
+    },
+     {
+        "name" : "Sara Cooper",
+        "position" : "UX Researcher",
+        "team" : "Team 2",
+        "gender": "Female"
+    },
+    {
+        "name" : "Peter Armstrong",
+        "position" : "Product manager",
+        "team" : "Team 2",
+        "gender": "Male"
+    },
+    {
+        "name" : "Scott Qunningham",
+        "position" : "Backend Developer",
+        "team" : "Team 2",
+        "gender": "Male"
+    }
+]
