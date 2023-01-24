@@ -1,3 +1,5 @@
+import styles from './CardTwo.module.css'
+
 export default function CardTwo({
     name = "none",
     position = "none",
@@ -8,7 +10,7 @@ export default function CardTwo({
 }) {
     return (
         
-        <div style={{ backgroundColor: colour, fontSize: font }}>{
+        <div className={ `${styles.employee_container}`} style={{ backgroundColor: colour, fontSize: font }}>{
             team === 1 ?  <img src={'icon/person.png'} width='50' />:
             team === 2 ? <img src={'icon/personThree.png'} width='50' /> :
             <img src ={image} width ='50' />        

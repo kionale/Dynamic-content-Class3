@@ -88,6 +88,17 @@
     background-color: var(--nav-font-color);
 }
 
+.student_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap:30px;
+  border-radius: 1rem;
+  overflow-y: scroll;
+ 
+}
+
 
 .footer {
 background-color: var(--clr-primary-1);

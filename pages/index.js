@@ -28,7 +28,7 @@ export default function Home() {
         <nav className={styles.nav}>
           <ul className={styles.links}>
             <li>
-              <Link href="index">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="about">About</Link>
@@ -47,7 +47,7 @@ export default function Home() {
           <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
           </div>
         <button className={styles.btn }>Click to apply</button>
-     
+     <div className={`${styles.student_container}`}>
         
         {
          
@@ -74,7 +74,7 @@ export default function Home() {
             }
           })
           
-       }
+       }</div>
         </main>
         
       <footer className={styles.footer}>2023 Copy Right</footer>

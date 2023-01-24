@@ -25,7 +25,7 @@ export default function About() {
                   <nav className={AboutStyles.nav}>
           <ul className={AboutStyles.links}>
             <li>
-              <Link href="index">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="about">About</Link>
@@ -34,9 +34,7 @@ export default function About() {
               <Link href="contact">Contact</Link>
             </li>
 
-          </ul>
-          
-          
+          </ul> 
         </nav>
  
                 <div className={AboutStyles.title}>Employee List</div>
