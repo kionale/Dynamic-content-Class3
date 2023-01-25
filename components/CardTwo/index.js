@@ -1,23 +1,24 @@
 import styles from './CardTwo.module.css'
 
 export default function CardTwo({
-    name = "none",
     position = "none",
-    gender = "Female",
-    team = 1
+    colour = "pink",
+    font = "0",
+    image="icon/personTwo.png"
 
 
 }) {
     return (
         
-        <div className={ `${styles.employee_container}`} style={{ backgroundColor: colour, fontSize: font }}>{
-            team === 1 ?  <img src={'icon/person.png'} width='50' />:
-            team === 2 ? <img src={'icon/personThree.png'} width='50' /> :
+        <div style={{ backgroundColor: colour, fontSize: font }}>
+        {
+            colour ==="orange" ?  <img src={'icon/person.png'} width='50' />:
+            colour ==="light-blue" ? <img src={'icon/personThree.png'} width='50' /> :
             <img src ={image} width ='50' />        
         }
             {/* if color == rd do img. : meaning else if is blue, imgTHree, otherwise defalut */}
-            {position}
+            <h2 className={styles.position }>{position}</h2>
             
-        </div>
+            </div>
     )
 }

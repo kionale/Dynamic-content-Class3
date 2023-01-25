@@ -2,7 +2,7 @@ import data from '../data/employee.json'
 import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import AboutStyles from '@/styles/About.module.css'
+import styles from '@/styles/About.module.css'
 import Link from 'next/link'
 import CardTwo from '@/components/CardTwo'
 
@@ -20,10 +20,10 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
                 
             </Head>
-            <main className={AboutStyles.main}>
+            <main className={styles.main}>
                 {/* <img className={AboutStyles.background_img} src={background_img} width="64" height="64" /> */}
-                  <nav className={AboutStyles.nav}>
-          <ul className={AboutStyles.links}>
+                  <nav className={styles.nav}>
+          <ul className={styles.links}>
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -37,23 +37,35 @@ export default function About() {
           </ul> 
         </nav>
  
-                <div className={AboutStyles.title}>Employee List</div>
+                <div className={styles.title}>Employee List</div>
+
+                <div className={styles.container}>
                 {
                     employee && employee.map((em, index) => {
-                        if (em.gender.toUpperCase() === "Female") {
+                        if (em.gender.toLowerCase() === "female") {
                             return (
                                 
-                                <CardTwo key={index} position={em.position} colour="orange" font="15px" />
-                            )
-                        }
-
-                        if (em.gender.toUpperCase() === "Male") {
-                            return (
-                                <CardTwo key={index} position={em.position} colour="light-blue" font="15px" />
+                                    <CardTwo key={index} position={em.position} colour="orange" font="15px" />
+                                
                             )
                         }
                     })
-                }
+                    }
+                </div>
+                
+                <div className={styles.container}>
+                {
+                    employee && employee.map((em, index) => {
+                        if (em.gender.toLowerCase() === "male") {
+                            return (
+                                
+                                    <CardTwo key={index} position={em.position} colour="light-blue" font="15px" />
+                                
+                            )
+                        }
+                    })
+                    }
+                </div>
                 
 
             </main>  

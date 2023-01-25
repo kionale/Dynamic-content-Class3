@@ -10,9 +10,9 @@ export default function Card({
 }) {
     return (
         
-        <div className={ `${styles.Card}`} style={{ backgroundColor: colour, fontSize: font}}>{
-            colour === "light-blue" ?  <img src={'icon/person.png'} width='50' />:
-            colour === "orange" ? <img src={'icon/personThree.png'} width='50' /> :
+        <div className={ `${styles.Card} ${styles.hover}`} style={{ backgroundColor: colour, fontSize: font}}>{
+            colour === "orange" ?  <img src={'icon/Business.jpeg'} width='50' />:
+            colour === "blue" ? <img src={'icon/Computing.png'} width='50' /> :
             <img src ={image} width ='50' />        
         }
         

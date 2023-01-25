@@ -57,7 +57,7 @@ export default function Home() {
             if (info.department.toLowerCase() === "business") {
               return (
                
-                <Card key ={index} degree={info.degree} colour="light-blue" font="15px" />
+                <Card key ={index} degree={info.degree} colour="orange" font="15px" />
                  
               )
               {/* <div key={index}>{info.degree}</div>
@@ -68,7 +68,7 @@ export default function Home() {
             if (info.department.toLowerCase() === "computing") {
               return (
                 
-                <Card key ={index} degree={info.degree} colour="orange" font="20px" />
+                <Card key ={index} degree={info.degree} colour="blue" font="20px" />
                 // <div key={index}>{info.degree}</div>
               )
             }
