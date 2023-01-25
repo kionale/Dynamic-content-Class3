@@ -50,7 +50,7 @@ export default function About() {
                             )
                         }
                     })
-                    }
+                }
                 </div>
                 
                 <div className={styles.container}>
@@ -59,7 +59,7 @@ export default function About() {
                         if (em.gender.toLowerCase() === "male") {
                             return (
                                 
-                                    <CardTwo key={index} position={em.position} colour="light-blue" font="15px" />
+                                <CardTwo key={index} position={em.position} colour="Olive" font="15px" />
                                 
                             )
                         }

@@ -9,15 +9,17 @@ export default function Card({
 
 }) {
     return (
-        
-        <div className={ `${styles.Card} ${styles.hover}`} style={{ backgroundColor: colour, fontSize: font}}>{
-            colour === "orange" ?  <img src={'icon/Business.jpeg'} width='50' />:
-            colour === "blue" ? <img src={'icon/Computing.png'} width='50' /> :
-            <img src ={image} width ='50' />        
-        }
-        
-            <h2 className={styles.degree}>{degree}</h2>
-            
+        <div className={styles.container}>
+            <div style={{ backgroundColor: colour }}>
+                {
+                    colour === "DarkSalmon" ? <img src={'icon/Business.jpeg'} width='100' /> :
+                        colour === "MediumSlateBlue" ? <img src={'icon/Computing.png'} width='100' /> :
+                            <img src={image} width='100s' />
+                }
+
+                <h2 className={styles.degree}>{degree}</h2>
+
+            </div>
         </div>
     )
 }

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 .main{
     
     background: linear-gradient(#e66465, #9198e5);
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -16,6 +18,7 @@
 
 .links a {
   margin-left: 1rem;
+  font-weight: 700;
 }
 .links a:hover{
 
@@ -61,8 +64,9 @@
     display: flex;
     margin:0 auto;
     padding:1rem;
-    max-width: 800px;
+    max-width: 900px;
     margin-bottom: 1rem;
+    gap:1rem;
 
 
 }
@@ -88,16 +92,23 @@
     background-color: var(--nav-font-color);
 }
 
-.student_container{
+.container{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  gap:30px;
-  border-radius: 1rem;
-  overflow-y: scroll;
- 
 }
+
+.container > div{
+  
+  font-size: 0.8rem;
+  margin: 1rem;
+  width: 300px;
+  height:250px;
+
+}
+
+
 
 
 .footer {
